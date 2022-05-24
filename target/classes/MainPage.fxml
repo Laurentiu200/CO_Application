@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #2C3E4C;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aplicatiepaypall.MainPageController">
+   <children>
+      <TextField layoutX="90.0" layoutY="241.0" prefHeight="44.0" prefWidth="181.0" text="COMPUTE DIGITS OF PI">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="90.0" layoutY="313.0" prefHeight="44.0" prefWidth="181.0" text="DELETE LIST">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="90.0" layoutY="388.0" prefHeight="44.0" prefWidth="181.0" text="HELP">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField alignment="CENTER_RIGHT" layoutX="329.0" layoutY="241.0" prefHeight="44.0" prefWidth="181.0" text="EXECUTION TIME LIST">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER_RIGHT" layoutX="329.0" layoutY="313.0" prefHeight="44.0" prefWidth="181.0" text="SET UNIT TIME">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField alignment="CENTER_RIGHT" layoutX="329.0" layoutY="388.0" prefHeight="44.0" prefWidth="181.0" text="EXIT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="124.0" layoutY="65.0" prefHeight="89.0" prefWidth="371.0" text="WELCOME TO PAYPAL ATM">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="computeButton" layoutX="14.0" layoutY="242.0" mnemonicParsing="false" onAction="#initComputations" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <Button fx:id="deleteList" layoutX="14.0" layoutY="314.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <Button fx:id="table" layoutX="14.0" layoutY="389.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <Button fx:id="timeList" layoutX="526.0" layoutY="241.0" mnemonicParsing="false" onAction="#ExecTimeList" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <Button layoutX="526.0" layoutY="313.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <Button layoutX="526.0" layoutY="388.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+   </children>
+</AnchorPane>
