@@ -42,9 +42,9 @@
       </TextField>
       <Button fx:id="computeButton" layoutX="14.0" layoutY="242.0" mnemonicParsing="false" onAction="#initComputations" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
       <Button fx:id="deleteList" layoutX="14.0" layoutY="314.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
-      <Button fx:id="table" layoutX="14.0" layoutY="389.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <Button fx:id="table" layoutX="14.0" layoutY="389.0" mnemonicParsing="false" onAction="#imageAction" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
       <Button fx:id="timeList" layoutX="526.0" layoutY="241.0" mnemonicParsing="false" onAction="#ExecTimeList" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
       <Button layoutX="526.0" layoutY="313.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
-      <Button layoutX="526.0" layoutY="388.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <Button fx:id="exitButton" layoutX="526.0" layoutY="388.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
    </children>
 </AnchorPane>

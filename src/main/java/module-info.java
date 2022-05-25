@@ -1,6 +1,8 @@
 module com.example.aplicatiepaypall {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.datatransfer;
+    requires java.desktop;
 
 
     opens com.example.aplicatiepaypall to javafx.fxml;

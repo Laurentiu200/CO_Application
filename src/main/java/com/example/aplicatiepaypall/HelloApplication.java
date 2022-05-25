@@ -21,9 +21,9 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("MainPage.fxml")));
-        primaryStage.setTitle("Log In page");
-        primaryStage.setScene(new Scene(root, 600, 600));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("interfataCO.fxml")));
+        primaryStage.setTitle("Main Page");
+        primaryStage.setScene(new Scene(root, 1280, 720));
         primaryStage.show();
     }
 

@@ -144,15 +144,6 @@ public class Bpp {
     }
 
 
-    public static void main(String args[]) {
 
-        long duration = System.currentTimeMillis();
-
-        Bpp bpp = new Bpp();
-        System.out.println("Decimal digits of pi at position " + NUM + ": " + bpp.getDecimal(NUM) + "\n");
-
-        duration = System.currentTimeMillis() - duration;
-        System.out.println("> " + duration + " ms");
-    }
 
 }
