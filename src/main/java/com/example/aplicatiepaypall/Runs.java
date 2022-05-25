@@ -8,8 +8,17 @@ public class Runs {
     private int nr_digits;
 
 
+
     public Runs(int nr_digits, String algorithm, double exec_time, int score) {
         this.nr_digits = nr_digits;
+        this.algorithm = algorithm;
+        this.exec_time = exec_time;
+        this.score = score;
+    }
+
+    public Runs( String algorithm, double exec_time, int score) {
+        nr_digits = 0;
+
         this.algorithm = algorithm;
         this.exec_time = exec_time;
         this.score = score;

@@ -146,10 +146,9 @@ public class HelloController {
             long time = timer.stop();
             digitsOfPi.setText(PiSpigot.getAllDigits());
 
-            try(FileWriter fw = new FileWriter("filename.txt", true);
-                BufferedWriter bw = new BufferedWriter(fw);
-                PrintWriter out = new PrintWriter(bw))
-            {
+            try (FileWriter fw = new FileWriter("filename.txt", true);
+                 BufferedWriter bw = new BufferedWriter(fw);
+                 PrintWriter out = new PrintWriter(bw)) {
                 out.println(textField.getText() + " " + "Spigot " + logger.writeTime(time, timeUnit) + " " + "0");
             } catch (IOException e) {
             }
@@ -163,6 +162,5 @@ public class HelloController {
 
 
         }
-
     }
 }

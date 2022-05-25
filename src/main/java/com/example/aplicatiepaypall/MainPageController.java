@@ -25,6 +25,8 @@ public class MainPageController {
     @FXML
     Button deleteList;
 
+    @FXML
+    Button exitButton;
 
 
     @FXML
@@ -61,4 +63,23 @@ public class MainPageController {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    public void imageAction() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/SelectToTest.fxml"));
+        Parent root = (Parent) loader.load();
+        Stage window = (Stage) timeList.getScene().getWindow();
+        window.setTitle("Table");
+        window.setScene(new Scene(root, 600,400));
+    }
+
+    @FXML
+    public void exitAction() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/interfataCo.fxml"));
+        Parent root = (Parent) loader.load();
+        Stage window = (Stage) exitButton.getScene().getWindow();
+        window.setTitle("Table");
+        window.setScene(new Scene(root, 1280,720));
+    }
+
 }
