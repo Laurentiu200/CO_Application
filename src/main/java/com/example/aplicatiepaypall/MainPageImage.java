@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -43,6 +44,8 @@ public class MainPageImage implements Initializable {
     @FXML
     Button exitButton;
 
+    @FXML
+    TextField score;
     FileChooser fileChooser = new FileChooser();
     String check = "";
 
@@ -132,8 +135,10 @@ public class MainPageImage implements Initializable {
     public void imageAction() throws IOException {
         long time;
         timer.start();
+        for (int i = 1; i <= 5; i++)
         BlurrEfect.CreateImage();
         time = timer.stop();
+        score.setText(String.valueOf(5.0/Math.sqrt(time/1000000000.0)));
         try(FileWriter fw = new FileWriter("filename1.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter out = new PrintWriter(bw))

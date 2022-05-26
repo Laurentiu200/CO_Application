@@ -4,7 +4,6 @@ com\example\aplicatiepaypall\Timing\ITimer.class
 com\example\aplicatiepaypall\HelloApplication.class
 com\example\aplicatiepaypall\MainPageImage.class
 com\example\aplicatiepaypall\CPU\PiSpigot.class
-com\example\aplicatiepaypall\DigitsController.class
 com\example\aplicatiepaypall\TableViewController.class
 com\example\aplicatiepaypall\CPU\BrentSalamin.class
 com\example\aplicatiepaypall\ProgressAction.class

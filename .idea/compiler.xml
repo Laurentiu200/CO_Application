@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="AplicatiePayPall" options="--add-exports java.datatransfer/java.awt=com.example.aplicatiepaypall" />
+      <module name="AplicatiePayPall" options="" />
     </option>
   </component>
 </project>

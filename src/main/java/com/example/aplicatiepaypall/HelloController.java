@@ -25,7 +25,7 @@ public class HelloController {
     IBenchmark benchMark;
     ITimer timer;
     ILogger logger;
-    TimeUnit timeUnit = TimeUnit.Mili;
+    TimeUnit timeUnit = TimeUnit.Sec;
 
 
     @FXML
@@ -60,6 +60,8 @@ public class HelloController {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        benchMark.initialize(1000);
+        benchMark.Run(0);
     }
 
     @FXML
@@ -81,11 +83,12 @@ public class HelloController {
             long time;
             progress.setVisible(true);
             timer.start();
+            for(int i = 1; i <= 50; i++)
             benchMark.Run(0);
             time = timer.stop();
             digitsOfPi.setText(benchMark.getResult());
             progress.setVisible(true);
-
+            scoreField.setText(String.valueOf(50.0/Math.sqrt(time/1000000000.0)));
             try(FileWriter fw = new FileWriter("filename.txt", true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter out = new PrintWriter(bw))
@@ -114,8 +117,11 @@ public class HelloController {
         if (textField.getText() != "") {
             benchMark.initialize(Integer.parseInt(textField.getText()));
             timer.start();
-            digitsOfPi.setText("PI = " + String.valueOf(alg.computeImpl()));
+            for (int i = 1; i <= 100; i++)
+                alg.computeImpl();
             long time = timer.stop();
+            digitsOfPi.setText("PI = " + String.valueOf(alg.computeImpl()));
+            scoreField.setText(String.valueOf(Math.sqrt((100.0/(time/1000000000.0)))));
 
             try(FileWriter fw = new FileWriter("filename.txt", true);
                 BufferedWriter bw = new BufferedWriter(fw);
@@ -142,10 +148,11 @@ public class HelloController {
         if (textField.getText() != "") {
             benchMark.initialize(Integer.parseInt(textField.getText()));
             timer.start();
+            for(int i = 1 ; i <= 100; i++ )
             benchMark.Run(1);
             long time = timer.stop();
             digitsOfPi.setText(PiSpigot.getAllDigits());
-
+            scoreField.setText(String.valueOf(Math.sqrt((100.0/(time/1000000000.0)))));
             try (FileWriter fw = new FileWriter("filename.txt", true);
                  BufferedWriter bw = new BufferedWriter(fw);
                  PrintWriter out = new PrintWriter(bw)) {
