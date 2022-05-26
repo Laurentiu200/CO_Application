@@ -46,5 +46,6 @@
         <Button fx:id="timeList" layoutX="526.0" layoutY="241.0" mnemonicParsing="false" onAction="#ExecTimeList" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
         <Button fx:id="saveButton" layoutX="526.0" layoutY="313.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
         <Button fx:id="exitButton" layoutX="526.0" layoutY="388.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: #808080;" />
+      <TextField fx:id="score" layoutX="181.0" layoutY="492.0" prefHeight="72.0" prefWidth="247.0" />
     </children>
 </AnchorPane>
